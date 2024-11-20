@@ -1,0 +1,105 @@
+html {
+    font-size: 20px; /* Move font size to html */
+}
+
+body {
+    text-align: center;
+    width: 93%;
+    border: solid hwb(43 92% 5%) 5px;
+    background-color: rgb(233, 154, 27);
+    padding: 0; /* Changed to 0 for auto margin */
+    margin: 1rem; /* Changed to rem */
+    display: flex; /* New Flex properties */
+    flex-direction: column;
+}
+
+.structual {
+    margin: 1rem; /* Changed margin to 1rem */
+    border: rgb(0, 0, 0) 3px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Changed font-size */
+}
+
+nav {
+    border: solid rgb(241, 234, 234) 4px;
+    padding: 1em; 
+    margin: 20px;
+}
+
+nav a {
+    padding: 1em; /* Changed padding to 1em */
+    text-decoration: none;
+    color: rgb(32, 12, 147);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.Column:hover {
+    color: rgb(186, 212, 15);
+}
+
+footer {
+    border: solid rgb(241, 234, 234) 1px;
+}
+
+footer p {
+    padding: 10px;
+}
+
+section {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#left, #right {
+    border: solid rgb(241, 234, 234) 2px;
+    background-color: rgba(237, 82, 11, 0.976);
+    font-size: larger;
+    flex: 1; 
+}
+
+main {
+    border: solid rgb(241, 234, 234) 1px;
+    background-color: rgb(233, 154, 27);
+    padding: 10px;
+    flex: 2; 
+}
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 20px;
+}
+figure {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0.5em; 
+}
+.images img {
+
+
+    width: 80%; 
+    height: 80%; 
+}
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 16px; 
+
+    }
+    
+    #gallery {
+        
+        grid-template-columns: 1fr ;
+        
+    }
+    body {
+        flex-direction: column;
+    }
+}
